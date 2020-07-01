@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- onsen ui -->
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <ons-page>
+
+    <ons-toolbar>
+        <div class="center">WEATHERAPP</div>
+    </ons-toolbar>
+    
+
+    <div class="container">
+
+            <ons-label for="search">City:</ons-label> <ons-input type="text" modifier="underbar" id="search" value=""></ons-input>
+            <ons-button type="submit" class="search-submit">Search</ons-button>
+
+            <div class="location">
+                <h1 class="location-timezone">Timezone</h1>
+                <h6 class="location-country"></h6>
+                <p><img src="" alt="" class="icon"></p>
+            </div>
+
+            <div class="temperature">
+                <div class="degree-section">
+                    <h2 class="temperature-degree">..</h2>
+                    &deg;<span>F</span>
+                    <ons-button class="deg-btn">to Celsius</ons-button>
+                </div>
+                <div class="temperature-description">
+                    ...
+                </div>
+            </div>
+
+    </div>
+
+    </ons-page>
+
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

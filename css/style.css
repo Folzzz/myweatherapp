@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;    
+    background: linear-gradient(rgb(147, 182, 187), rgb(48, 62, 143));
+    background-blend-mode: multiply;
+    font-family: sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* form styling */
+#search {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 3px;
+}
+
+
+/* location */
+.location,
+.temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.location-country{
+    margin: 0 5px;
+}
+.temperature {
+    flex-direction: column;
+}
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degree-section span {
+    margin: 10px 10px 10px 3px;
+    font-family: cursive;
+    font-size: 30px;
+}
+.degree-section h2 {
+    font-size: 40px;
+}
