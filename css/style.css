@@ -18,7 +18,7 @@
 /* form styling */
 #search {
     background-color: #fff;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     padding: .5rem;
     border-radius: 3px;
 }
@@ -27,7 +27,7 @@
 /* location */
 .location,
 .temperature {
-    height: 30vh;
+    height: 25vh;
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -51,4 +51,7 @@
 }
 .degree-section h2 {
     font-size: 40px;
+}
+.description-div {
+    display: flex;
 }

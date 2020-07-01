@@ -24,23 +24,26 @@
 
     <div class="container">
 
-            <ons-label for="search">City:</ons-label> <ons-input type="text" modifier="underbar" id="search" value=""></ons-input>
+            <ons-label for="search">City:</ons-label> <ons-input type="text" modifier="underbar" id="search" value="" placeholder="type in a location"></ons-input>
             <ons-button type="submit" class="search-submit">Search</ons-button>
 
             <div class="location">
                 <h1 class="location-timezone">Timezone</h1>
-                <h6 class="location-country"></h6>
-                <p><img src="" alt="" class="icon"></p>
+                <h4 class="location-country"></h4>
+        
             </div>
 
             <div class="temperature">
+                <div class="description-div">
+                    <div class="temperature-description">
+                        ...
+                    </div>
+                    <p><img src="" alt="" class="icon"></p>
+                </div>
                 <div class="degree-section">
-                    <h2 class="temperature-degree">..</h2>
+                    <h2 class="temperature-degree"></h2>
                     &deg;<span>F</span>
                     <ons-button class="deg-btn">to Celsius</ons-button>
-                </div>
-                <div class="temperature-description">
-                    ...
                 </div>
             </div>
 
